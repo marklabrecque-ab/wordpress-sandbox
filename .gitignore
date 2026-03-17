@@ -1,0 +1,37 @@
+# WordPress configuration
+web/wp-config.php
+
+# WordPress uploads and generated content
+web/wp-content/uploads/
+web/wp-content/upgrade/
+web/wp-content/backup-db/
+web/wp-content/backups/
+web/wp-content/cache/
+web/wp-content/blogs.dir/
+
+# WordPress debug log
+web/wp-content/debug.log
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Composer
+vendor/
+composer.lock
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-error.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
