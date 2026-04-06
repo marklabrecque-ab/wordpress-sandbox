@@ -1,0 +1,5 @@
+version: '3.6'
+services:
+  web:
+    volumes:
+      - /Users/mark/Projects/apex-search:/var/www/html/web/wp-content/plugins/apex-search
