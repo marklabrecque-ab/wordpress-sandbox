@@ -21,6 +21,12 @@ web/wp-content/debug.log
 vendor/
 composer.lock
 
+# WordPress core ships React/ReactDOM/Moment/etc. in this `vendor/` directory.
+# The generic Composer `vendor/` rule above would otherwise exclude it, which
+# leaves the block editor unable to boot (blank screen, React 404s). Keep it.
+!web/wp-includes/js/dist/vendor/
+!web/wp-includes/js/dist/vendor/**
+
 # Node
 node_modules/
 npm-debug.log*
